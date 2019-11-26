@@ -1,10 +1,10 @@
 
 <%= form_with(url: "/welcome/result", method: "get", local: true) do %>
-  <%= label_tag(:artist_name, "Search artist:") %>
+  <%= label_tag(:artist_name, "Artist name:") %>
   <%= text_field_tag(:artist_name) %>
 
-  <%= label_tag(:song_title, "Search song:") %>
+  <%= label_tag(:song_title, "Song title:") %>
   <%= text_field_tag(:song_title) %>
   
-  <%= submit_tag("Search") %>
+  <%= submit_tag("Show lyrics") %>
 <% end %>
